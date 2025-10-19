@@ -1,0 +1,285 @@
+/* RETRO ARCADE Design System Tokens */
+/* Production-level implementation with complete token system */
+
+:root {
+  /* === COLOR TOKENS === */
+  /* Primary Colors */
+  --retro-primary: #FF6B35;
+  --retro-primary-hover: #E55A2B;
+  --retro-primary-active: #CC4A1F;
+  --retro-primary-light: #FF8A5B;
+  --retro-primary-dark: #B8471F;
+
+  /* Secondary Colors */
+  --retro-secondary: #004E89;
+  --retro-secondary-hover: #003D6B;
+  --retro-secondary-active: #002C4D;
+  --retro-secondary-light: #1A6BA3;
+  --retro-secondary-dark: #003A5C;
+
+  /* Accent Colors */
+  --retro-accent: #00A8CC;
+  --retro-accent-hover: #0091B3;
+  --retro-accent-active: #007A9A;
+  --retro-accent-light: #33B8D6;
+  --retro-accent-dark: #0086A3;
+
+  /* Neutral Colors */
+  --retro-dark: #1A1A1A;
+  --retro-dark-hover: #2A2A2A;
+  --retro-dark-active: #0A0A0A;
+  --retro-light: #FFFFFF;
+  --retro-light-hover: #F5F5F5;
+  --retro-light-active: #E5E5E5;
+
+  /* Semantic Colors */
+  --retro-success: #00FF00;
+  --retro-success-hover: #00E600;
+  --retro-success-active: #00CC00;
+  --retro-warning: #FF0000;
+  --retro-warning-hover: #E60000;
+  --retro-warning-active: #CC0000;
+  --retro-info: #00A8CC;
+  --retro-error: #FF0000;
+
+  /* Background Colors */
+  --retro-bg-primary: #1A1A1A;
+  --retro-bg-secondary: #2A2A2A;
+  --retro-bg-tertiary: #3A3A3A;
+  --retro-bg-elevated: #4A4A4A;
+  --retro-bg-overlay: rgba(26, 26, 26, 0.95);
+
+  /* Text Colors */
+  --retro-text-primary: #FFFFFF;
+  --retro-text-secondary: #CCCCCC;
+  --retro-text-tertiary: #999999;
+  --retro-text-disabled: #666666;
+  --retro-text-inverse: #1A1A1A;
+
+  /* Border Colors */
+  --retro-border-primary: #FF6B35;
+  --retro-border-secondary: #004E89;
+  --retro-border-accent: #00A8CC;
+  --retro-border-neutral: #666666;
+  --retro-border-light: #CCCCCC;
+
+  /* === TYPOGRAPHY TOKENS === */
+  /* Font Families */
+  --retro-font-primary: 'Press Start 2P', monospace;
+  --retro-font-secondary: 'Orbitron', sans-serif;
+  --retro-font-body: 'Roboto Mono', monospace;
+  --retro-font-display: 'Press Start 2P', monospace;
+
+  /* Font Sizes - 8px base grid system */
+  --retro-text-xs: 0.75rem;    /* 12px */
+  --retro-text-sm: 0.875rem;   /* 14px */
+  --retro-text-base: 1rem;     /* 16px */
+  --retro-text-lg: 1.125rem;   /* 18px */
+  --retro-text-xl: 1.25rem;    /* 20px */
+  --retro-text-2xl: 1.5rem;    /* 24px */
+  --retro-text-3xl: 1.875rem;  /* 30px */
+  --retro-text-4xl: 2.25rem;   /* 36px */
+  --retro-text-5xl: 3rem;      /* 48px */
+  --retro-text-6xl: 3.75rem;   /* 60px */
+
+  /* Font Weights */
+  --retro-weight-normal: 400;
+  --retro-weight-medium: 500;
+  --retro-weight-semibold: 600;
+  --retro-weight-bold: 700;
+
+  /* Line Heights */
+  --retro-leading-tight: 1.25;
+  --retro-leading-snug: 1.375;
+  --retro-leading-normal: 1.5;
+  --retro-leading-relaxed: 1.625;
+  --retro-leading-loose: 2;
+
+  /* Letter Spacing */
+  --retro-tracking-tighter: -0.05em;
+  --retro-tracking-tight: -0.025em;
+  --retro-tracking-normal: 0em;
+  --retro-tracking-wide: 0.025em;
+  --retro-tracking-wider: 0.05em;
+
+  /* === SPACING TOKENS === */
+  /* Base unit: 8px grid system */
+  --retro-space-0: 0;
+  --retro-space-1: 0.25rem;   /* 4px */
+  --retro-space-2: 0.5rem;     /* 8px */
+  --retro-space-3: 0.75rem;     /* 12px */
+  --retro-space-4: 1rem;       /* 16px */
+  --retro-space-5: 1.25rem;    /* 20px */
+  --retro-space-6: 1.5rem;     /* 24px */
+  --retro-space-8: 2rem;       /* 32px */
+  --retro-space-10: 2.5rem;    /* 40px */
+  --retro-space-12: 3rem;      /* 48px */
+  --retro-space-16: 4rem;      /* 64px */
+  --retro-space-20: 5rem;      /* 80px */
+  --retro-space-24: 6rem;      /* 96px */
+  --retro-space-32: 8rem;      /* 128px */
+
+  /* === BORDER RADIUS TOKENS === */
+  --retro-radius-none: 0;
+  --retro-radius-sm: 0.125rem;  /* 2px */
+  --retro-radius-base: 0.25rem; /* 4px */
+  --retro-radius-md: 0.375rem;  /* 6px */
+  --retro-radius-lg: 0.5rem;    /* 8px */
+  --retro-radius-xl: 0.75rem;   /* 12px */
+  --retro-radius-2xl: 1rem;    /* 16px */
+  --retro-radius-full: 9999px;
+
+  /* === SHADOW TOKENS === */
+  --retro-shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --retro-shadow-base: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  --retro-shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --retro-shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --retro-shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  --retro-shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+
+  /* Retro-specific shadows */
+  --retro-shadow-pixel: 2px 2px 0px var(--retro-primary);
+  --retro-shadow-pixel-lg: 4px 4px 0px var(--retro-primary);
+  --retro-shadow-glow: 0 0 10px var(--retro-accent);
+  --retro-shadow-neon: 0 0 20px var(--retro-primary), 0 0 40px var(--retro-primary);
+
+  /* === Z-INDEX TOKENS === */
+  --retro-z-dropdown: 1000;
+  --retro-z-sticky: 1020;
+  --retro-z-fixed: 1030;
+  --retro-z-modal-backdrop: 1040;
+  --retro-z-modal: 1050;
+  --retro-z-popover: 1060;
+  --retro-z-tooltip: 1070;
+  --retro-z-toast: 1080;
+
+  /* === MOTION TOKENS === */
+  /* Duration */
+  --retro-duration-fast: 100ms;
+  --retro-duration-normal: 200ms;
+  --retro-duration-slow: 400ms;
+  --retro-duration-slower: 600ms;
+
+  /* Easing */
+  --retro-ease-linear: linear;
+  --retro-ease-in: cubic-bezier(0.4, 0, 1, 1);
+  --retro-ease-out: cubic-bezier(0, 0, 0.2, 1);
+  --retro-ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+  --retro-ease-bounce: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  --retro-ease-pixel: steps(4, end);
+
+  /* === BREAKPOINT TOKENS === */
+  --retro-bp-sm: 640px;
+  --retro-bp-md: 768px;
+  --retro-bp-lg: 1024px;
+  --retro-bp-xl: 1280px;
+  --retro-bp-2xl: 1536px;
+
+  /* === COMPONENT TOKENS === */
+  /* Button */
+  --retro-button-height-sm: 2rem;     /* 32px */
+  --retro-button-height-md: 2.5rem;   /* 40px */
+  --retro-button-height-lg: 3rem;      /* 48px */
+  --retro-button-padding-x: 1rem;      /* 16px */
+  --retro-button-padding-y: 0.5rem;    /* 8px */
+
+  /* Input */
+  --retro-input-height: 2.5rem;        /* 40px */
+  --retro-input-padding-x: 0.75rem;    /* 12px */
+  --retro-input-padding-y: 0.5rem;    /* 8px */
+
+  /* Card */
+  --retro-card-padding: 1.5rem;        /* 24px */
+  --retro-card-border-width: 2px;
+  --retro-card-border-radius: 0.5rem;  /* 8px */
+
+  /* === ACCESSIBILITY TOKENS === */
+  --retro-focus-ring-width: 2px;
+  --retro-focus-ring-color: var(--retro-accent);
+  --retro-focus-ring-offset: 2px;
+  --retro-focus-ring-offset-color: var(--retro-bg-primary);
+
+  /* === PERFORMANCE TOKENS === */
+  --retro-gpu-accelerated: transform, opacity;
+  --retro-will-change: transform, opacity;
+}
+
+/* === RETRO ARCADE THEME CLASS === */
+.retro-arcade-theme {
+  color-scheme: dark;
+  background-color: var(--retro-bg-primary);
+  color: var(--retro-text-primary);
+  font-family: var(--retro-font-body);
+  line-height: var(--retro-leading-normal);
+}
+
+/* === RETRO ARCADE UTILITIES === */
+.retro-pixel-border {
+  border: 2px solid var(--retro-primary);
+  box-shadow: var(--retro-shadow-pixel);
+}
+
+.retro-pixel-border-lg {
+  border: 4px solid var(--retro-primary);
+  box-shadow: var(--retro-shadow-pixel-lg);
+}
+
+.retro-glow {
+  box-shadow: var(--retro-shadow-glow);
+}
+
+.retro-neon {
+  box-shadow: var(--retro-shadow-neon);
+}
+
+.retro-scan-lines {
+  position: relative;
+}
+
+.retro-scan-lines::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    transparent 50%,
+    rgba(0, 168, 204, 0.03) 50%
+  );
+  background-size: 100% 4px;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.retro-glitch {
+  position: relative;
+  animation: retro-glitch 0.3s infinite;
+}
+
+@keyframes retro-glitch {
+  0%, 100% { transform: translate(0); }
+  20% { transform: translate(-2px, 2px); }
+  40% { transform: translate(-2px, -2px); }
+  60% { transform: translate(2px, 2px); }
+  80% { transform: translate(2px, -2px); }
+}
+
+/* === RESPONSIVE DESIGN TOKENS === */
+@media (max-width: 640px) {
+  :root {
+    --retro-text-base: 0.875rem;   /* 14px */
+    --retro-space-4: 0.75rem;      /* 12px */
+    --retro-space-6: 1rem;         /* 16px */
+    --retro-space-8: 1.25rem;      /* 20px */
+  }
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --retro-text-base: 1.125rem;   /* 18px */
+    --retro-space-4: 1.25rem;      /* 20px */
+    --retro-space-6: 1.5rem;       /* 24px */
+    --retro-space-8: 2rem;         /* 32px */
+  }
+}

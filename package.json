@@ -5,7 +5,8 @@
 	"type": "module",
 	"scripts": {
 		"setup": "tsx scripts/setup.ts",
-		"dev": "DEV_MODE=true vite",
+		"dev": "DEV_MODE=true vite --config vite.config.simple.ts",
+		"dev:cloudflare": "DEV_MODE=true vite",
 		"build": "tsc -b --incremental && vite build",
 		"lint": "eslint .",
 		"preview": "npm run build && vite preview",
